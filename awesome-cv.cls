@@ -616,17 +616,26 @@
 }
 
 % Define an environment for cvitems(for cventry)
-\newenvironment{cvitemstitle}{%
+\newenvironment{cvfirstitemstitle}{%
   \vspace{-4.0mm}
   \begin{justify}
 }{%
   \end{justify}
-  \vspace{0.5mm}
+  \vspace{4.0mm}
+}
+
+% Define an environment for cvitems(for cventry)
+\newenvironment{cvitemstitle}{%
+  \vspace{4.0mm}
+  \begin{justify}
+}{%
+  \end{justify}
+  \vspace{4.0mm}
 }
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvsubitems}{%
-  \vspace{0.5mm}
+  \vspace{-4.0mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
@@ -634,7 +643,7 @@
 }{%
   \end{itemize}
   \end{justify}
-  \vspace{4.5mm}
+  \vspace{-4.0mm}
 }
 
 
