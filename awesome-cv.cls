@@ -203,6 +203,7 @@
 % For elements of entry
 \newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\entrypositionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\scshape\color{graytext} #1}}
+\newcommand*{\entrysubpostyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{black} #1}}
 \newcommand*{\entrydatestyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\slshape\color{black} #1}}
 \newcommand*{\entrylocationstyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\slshape\color{black} #1}}
 \newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1em}\bodyfontlight\upshape\color{black} #1}}
@@ -524,7 +525,7 @@
   \end{center}
 }
 % Define an entry of cv information
-% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}
+% Usage: \cventry{<position>}{<title>}{<location>}{<date>}{<description>}{<subposition>}
 \newcommand*{\cventry}[5]{%
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
@@ -613,3 +614,40 @@
   \end{justify}
   \vspace{-4.0mm}
 }
+
+% Define an environment for cvitems(for cventry)
+\newenvironment{cvitemstitle}{%
+  \vspace{-4.0mm}
+  \begin{justify}
+}{%
+  \end{justify}
+  \vspace{0.5mm}
+}
+
+% Define an environment for cvitems(for cventry)
+\newenvironment{cvsubitems}{%
+  \vspace{0.5mm}
+  \begin{justify}
+  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+    \setlength{\parskip}{0pt}
+    \renewcommand{\labelitemi}{\bullet}
+}{%
+  \end{itemize}
+  \end{justify}
+  \vspace{4.5mm}
+}
+
+
+%\newcommand*{\cvsubitems}[1]{%
+%  \vspace{-4.0mm}
+%  \entrysubpositionstyle{#1} 
+%  \begin{justify}
+%  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
+%    \setlength{\parskip}{0pt}
+%    \renewcommand{\labelitemi}{\bullet}
+%}{%
+%  \end{itemize}
+%  \end{justify}
+%  \vspace{-4.0mm}
+%}
+%
