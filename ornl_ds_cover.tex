@@ -1,0 +1,162 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for Cover Letter
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Authors:
+% Claud D. Park <posquit0.bj@gmail.com>
+% Lars Richter <mail@ayeks.de>
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+\photo[circle,noedge,left]{./examples/profile}
+\name{Ray}{Matsumoto}
+\position{Scientific Researcher{\enskip\cdotp\enskip}Data Scientist}
+\address{1700 State Street Apt 412, Nashville, TN, 37203, USA}
+
+\mobile{(+1) (843) 475-8628}
+\email{ray.a.matsumoto@vanderbilt.edu}
+\homepage{www.raymatsumoto.com}
+\github{rmatsum836}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+
+%-------------------------------------------------------------------------------
+%	LETTER INFORMATION
+%	All of the below lines must be filled out
+%-------------------------------------------------------------------------------
+% The company being applied to
+\recipient
+  {Environmental Sciences Division}
+  {Oak Ridge National Laboratory\\Oak Ridge,
+  TN, USA}
+% The date on the letter, default is the date of compilation
+\letterdate{\today}
+% The title of the letter
+\lettertitle{Job Application for Data Scientist/Programmer}
+% How the letter is opened
+\letteropening{To whom it may concern,}
+% How the letter is closed
+\letterclosing{Sincerely,}
+% Any enclosures with the letter
+%\letterenclosure[Attached]{Curriculum Vitae}
+
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[R]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Ray Matsumoto~~~·~~~Cover Letter}
+  {}
+
+% Print the title with above letter informations
+\makelettertitle
+
+%-------------------------------------------------------------------------------
+%	LETTER CONTENT
+%-------------------------------------------------------------------------------
+\begin{cvletter}
+
+I am an enthusiastic researcher writing to express my interest in
+    joining the Bioresource Science and Engineering Group (BSE) within the Environmental Sciences Division at Oak Ridge National Laboratory.  
+    I am particularly excited about the work of using data analysis and programming to help
+    better understand the availability and environmental impacts of biomass
+    resources.
+
+    I believe my background would make me a great fit with your group.  During my
+    academic training in molecular modeling, I developed a strong foundation in
+    Python and data analysis, regularly developing software to implement
+    statistical methods for understanding simulation data.  
+    For instance, I developed an automated workflow on a computer cluster to run simulations for over 
+    400 chemical systems, conduct various analysis techniques, and compile the data into CSV format.  
+    I have also worked on several open-source Python
+    projects through the use of GitHub, contributing unit-testing, bug fixes,
+    and new features.
+    My work in these areas resulted in 10 peer-reviewed journal articles and 2
+    conference presentations.
+
+    In regards to my technical expertise in data science, I have completed
+    several projects leveraging the Python data science ecosystem.  I developed
+    a machine learning classification model with scikit-learn, Jupyter, and
+    pandas to predict baseball pitch types using structured data.  
+
+    Additionally, I am dedicated to expanding my technical skill set and learning new approaches to
+    efficiently solve problems.  
+    I recently completed on online course on Apache Spark to develop a greater understanding of large-scale data processing.
+    My understanding is that the above skills would be
+    transferable with the tasks performed in the BSE.
+
+    Data-driven approaches have shown immense promise for enabling discoveries
+    in scientific research.  It would be a privilege to support the
+    BSE efforts as a Data Scientist/ Programmer.
+
+    I appreciate your time and consideration.
+
+
+\end{cvletter}
+
+
+%-------------------------------------------------------------------------------
+% Print the signature and enclosures with above letter informations
+\makeletterclosing
+
+\end{document}
